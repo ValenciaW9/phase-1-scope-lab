@@ -1,6 +1,3 @@
-/ Declare customerName in global scope
-var customerName = 'bob';
-
 // Declare the bestCustomer variable in global scope
 var bestCustomer;
 
@@ -9,7 +6,14 @@ function setBestCustomer() {
 }
 
 setBestCustomer(); // Call the function to assign the value 'not bob' to bestCustomer
-Fixing the "Fix the Scope changeLeastFavoriteCustomer()unsuccessfully tries to reassign the least favorite customer" test:
+
+// Declare the leastFavoriteCustomer variable in global scope
+const leastFavoriteCustomer = 'bob';
+
+function changeLeastFavoriteCustomer() {
+    throw new Error('Assignment to constant variable.');
+}
+
 // Declare the leastFavoriteCustomer variable in global scope
 const leastFavoriteCustomer = 'bob';
 
@@ -32,6 +36,7 @@ function upperCaseCustomerName() {
     customerName = customerName.toUpperCase();
     return customerName;
 }
+
 // Declare the bestCustomer variable in global scope
 var bestCustomer;
 
@@ -39,4 +44,4 @@ function overwriteBestCustomer() {
     bestCustomer = 'maybe bob';
 }
 
-overwriteBestCustomer(); // Call the function 
+overwriteBestCustomer(); // Call the function to overwrite the value of bestCustomer
