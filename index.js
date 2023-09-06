@@ -1,9 +1,6 @@
-I apologize for the confusion. It seems that there are still some issues with the code. Let's go through each of them and address them accordingly.
-
-Fixing the "Fix the Scope declare customerName to be bob in global scope" test:
-// Declare customerName in global scope
+/ Declare customerName in global scope
 var customerName = 'bob';
-Fixing the "Fix the Scope setBestCustomer()setBestCustomer" test:
+
 // Declare the bestCustomer variable in global scope
 var bestCustomer;
 
@@ -29,13 +26,12 @@ try {
         throw error;
     }
 }
-Fixing the "Fix the Scope upperCaseCustomerName()modifies the customerName variable" test:
+
 // At the end of the upperCaseCustomerName function, add a return statement to return the customerName
 function upperCaseCustomerName() {
     customerName = customerName.toUpperCase();
     return customerName;
 }
-Fixing the "Fix the Scope overwriteBestCustomer()overwrites the best customer" test:
 // Declare the bestCustomer variable in global scope
 var bestCustomer;
 
