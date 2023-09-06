@@ -1,3 +1,9 @@
+I apologize for the confusion. It seems that there are still some issues with the code. Let's go through each of them and address them accordingly.
+
+Fixing the "Fix the Scope declare customerName to be bob in global scope" test:
+// Declare customerName in global scope
+var customerName = 'bob';
+Fixing the "Fix the Scope setBestCustomer()setBestCustomer" test:
 // Declare the bestCustomer variable in global scope
 var bestCustomer;
 
@@ -36,3 +42,5 @@ var bestCustomer;
 function overwriteBestCustomer() {
     bestCustomer = 'maybe bob';
 }
+
+overwriteBestCustomer(); // Call the function 
